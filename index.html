@@ -8,8 +8,8 @@
     <link
       rel="icon"
       type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
+      sizes="3232"
+      href="./images/favicon-3232.png"
     />
 
     <!-- Bootstrap CSS -->
@@ -19,24 +19,101 @@
 
     <title>Frontend Mentor | Calculator app</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    
   </head>
-  <body>
-    <div class="attribution">
+  <body class="px-3">
+    <!-- display window container -->
+    <div id="display" class="px-0 container">
+      <div class="row">
+        <div class="col">
+          <span id="display-window" class="border d-block"
+          >Numbers from keypad go here...</span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- KEYPAD -->
+    <div id="keypad" class="p-3 container">
+      <!-- 0 -->
+      <div class="flex-nowrap justify-content-center row">
+        <div class="col">
+          <input class="keypad-buttons" type="button" value="7"></input>
+        </div>
+        <div class="col">
+          <input class="keypad-buttons"type="button"value="8"></input>
+        </div>
+        <div class="col">
+          <input class="keypad-buttons"type="button"value="9"></input>
+        </div>
+        <div class="col">
+          <!-- DELETE BUTTON -->
+          <input id="delete" class=" keypad-buttons"type="button" value="del"></input>
+        </div>
+      </div>
+      <!-- 1 -->
+      <div class="flex-nowrap justify-content-center row">
+        <div class="col">
+          <input class="keypad-buttons" type="button" value="4"></input>
+        </div>
+        <div class="col">
+          <input class="keypad-buttons"type="button"value="5"></input>
+        </div>
+        <div class="col">
+          <input class="keypad-buttons"type="button"value="6"></input>
+        </div>
+        <div class="col">
+          <!-- DELETE BUTTON -->
+          <input id="delete" class=" keypad-buttons"type="button" value="+"></input>
+        </div>
+      </div>
+      <!-- 2-->
+      <div class="flex-nowrap justify-content-center row">
+        <div class="col">
+          <input class="keypad-buttons" type="button" value="1"></input>
+        </div>
+        <div class="col">
+          <input class="keypad-buttons"type="button"value="2"></input>
+        </div>
+        <div class="col">
+          <input class="keypad-buttons"type="button"value="3"></input>
+        </div>
+        <div class="col">
+          <!-- MINUS BUTTON -->
+          <input id="delete" class=" keypad-buttons"type="button" value="-"></input>
+        </div>
+      </div>
+      <div class="flex-nowrap justify-content-center row">
+        <div class="col">
+          <input class="keypad-buttons" type="button" value="."></input>
+        </div>
+        <div class="col">
+          <input class="keypad-buttons"type="button"value="0"></input>
+        </div>
+        <div class="col">
+          <input class="keypad-buttons"type="button"value="/"></input>
+        </div>
+        <div class="col">
+          <!-- MINUS BUTTON -->
+          <input id="delete" class=" keypad-buttons"type="button" value="*"></input>
+        </div>
+      </div>
+      <!-- RESET + "=" BUTTONS -->
+      <div class="special row">
+        <div class="col">
+          <input id="reset"class=" keypad-buttons" type="button" value="reset"></input>
+        </div>
+        <div class="col">
+          <input id="equals"class=" keypad-buttons" type="button" value="="></input>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="mt-3 attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Colin R. Rodney</a>.
-    </div>
+    <footer>
     <script src="js/app.js"></script>
   </body>
 </html>

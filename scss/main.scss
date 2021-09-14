@@ -1,5 +1,53 @@
-// * {
-//   box-sizing: border-box;
-//   margin: 0;
-//   padding: 0;
-// }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  // DEVELOPMENT COLOR SCHEME -https://colorpalettes.net/color-palette-4168/
+
+  --body-background: #bbb6b6;
+  --button-background: #bbb6b6;
+  --button-width: 100%;
+  --keypad-background: #424246;
+  --equal-button: red;
+}
+
+body {
+  background-color: var(--body-background);
+
+  #display {
+    margin: 4rem auto 1rem auto; // top right bottom left
+
+    #display-window {
+      width: 100%;
+      height: 4rem;
+    }
+  }
+
+  #keypad {
+    background-color: var(--keypad-background);
+
+    .col {
+      padding: 0;
+    }
+  }
+
+  .keypad-buttons {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    background-color: var(--button-background);
+    color: #fff;
+  }
+
+  // FOOTER
+  .attribution {
+    font-size: 16px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
