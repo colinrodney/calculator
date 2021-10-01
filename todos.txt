@@ -1,4 +1,4 @@
-Calculator App TOODs
+Calculator App TOODs + Learning
 
 NOTE: As of 9/30/21 -you have 7 days to complete this project!
 
@@ -9,3 +9,46 @@ NOTE: As of 9/30/21 -you have 7 days to complete this project!
 3. Begin work on performing calculations with numbers entered @ calculator input section
 
 4. Display result of calculations @ input span
+
+What are we learning w/ this project?
+  > Concepts / methods
+    - JS
+      - .hasAttribute() - chk to see if a DOM element has specified attribute
+
+      resources:
+      https://www.w3schools.com/jsref/met_element_hasattribute.asp
+
+      - .getAttribute() -
+      returns value of attribute w/ specified name of an element
+
+      learning resources:
+      https://www.w3schools.com/jsref/met_element_getattribute.asp
+
+
+      - event delegation pattern(s)
+        - Pattern that allows for efficient handling of events.
+        
+          - Instead of adding an event listener to each similar element, we can add an event listener to a parent element and call an event listener on a specific target usin the .target propert of the event object
+
+          - resources:
+          https://www.geeksforgeeks.org/event-delegation-in-javascript/#:~:text=Event%20Delegation%20is%20basically%20a,property%20of%20the%20event%20object.
+
+      - target event property +> event.target
+        - Returns the element that triggered the event
+
+        - References/ refers to the element that triggered the event
+
+        - Gets the element on which the event ORIGINALLY occurred as opposed to the 'currentTarget' propert which always refers to the element whose event listener triggered the event.
+
+        - resources: 
+          https://www.w3schools.com/jsref/event_target.asp
+
+      - .matches()  
+        - method which returns boolean value indicating whether or not an element is matched by a specific CSS selector.
+
+        resources:
+        https://www.w3schools.com/jsref/met_element_matches.asp
+
+    - HTML
+      - data-* attribute 
+      - value attribute
