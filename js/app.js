@@ -20,36 +20,27 @@ KEYPAD.addEventListener("click", (event) => {
   // chk working
   // console.log(event.target); <-- refers to element that triggered event
 
+  // store value of clicked button to variable
+  let keyValue = event.target.value;
+
   // chk if key clicked has data-* attribute + do something
   if (event.target.hasAttribute("data-action")) {
+    // some mathematical operation to be performed...(some function)...
     let x = event.target.getAttribute("data-action");
     console.log("data-action button", x);
   } else {
-    console.log("number key");
+    // console.log(keyValue);
   }
 
-  // Display value of clicked button @ display window
-  SPAN.innerText = event.target.value;
+  // chk if value in display-window is 0...
+
+  // concatenate...
+  let updatedDisplayValue = SPAN.innerText + event.target.value;
+
+  SPAN.innerText = updatedDisplayValue;
+
+  // let currentValue = SPAN.innerText;
+
+  // let test = (currentValue += keyValue);
+  // console.log(test);
 });
-
-// attach eventlisteners to each input button...
-// for (let i = 0; i < INPUTBUTTON.length; i++) {
-//   INPUTBUTTON[i].addEventListener("click", () => {
-//     // show value of button clicked @ display window
-//     SPAN.innerText = INPUTBUTTON[i].value;
-
-//     // chk if button clicked has data-* attribute
-//     if (INPUTBUTTON[i].hasAttribute("data-action")) {
-//       console.log("true");
-//     } else {
-//       console.log("false");
-//     }
-//   });
-// }
-
-// // grab and store display window input values
-// function test(INPUTBUTTON) {
-//   let inputArr = [];
-//   inputArr.push(INPUTBUTTON.value);
-//   console.log(inputArr);
-// }
