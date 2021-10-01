@@ -27,7 +27,7 @@
       <div class="row">
         <div class="col">
           <span id="display-window" class="border d-block"
-          >Numbers from keypad go here...</span
+          >0</span
           >
         </div>
       </div>
@@ -47,7 +47,7 @@
         </div>
         <div class="col">
           <!-- DELETE BUTTON -->
-          <input id="delete" class=" keypad-buttons"type="button" value="del"></input>
+          <input id="delete" class=" keypad-buttons"type="button" value="del" data-action="delete"></input>
         </div>
       </div>
       <!-- 1 -->
@@ -63,7 +63,7 @@
         </div>
         <div class="col">
           <!-- DELETE BUTTON -->
-          <input id="delete" class=" keypad-buttons"type="button" value="+"></input>
+          <input id="delete" class=" keypad-buttons"type="button" value="+" data-action="add"></input>
         </div>
       </div>
       <!-- 2-->
@@ -79,31 +79,31 @@
         </div>
         <div class="col">
           <!-- MINUS BUTTON -->
-          <input id="delete" class=" keypad-buttons"type="button" value="-"></input>
+          <input id="subtract" class=" keypad-buttons"type="button" value="-" data-action="subtract"></input>
         </div>
       </div>
       <div class="flex-nowrap justify-content-center row">
         <div class="col">
-          <input class="keypad-buttons" type="button" value="."></input>
+          <input class="keypad-buttons" type="button" value="." data-action="decimal"></input>
         </div>
         <div class="col">
           <input class="keypad-buttons"type="button"value="0"></input>
         </div>
         <div class="col">
-          <input class="keypad-buttons"type="button"value="/"></input>
+          <input class="keypad-buttons"type="button"value="/" data-action="divide"></input>
         </div>
         <div class="col">
           <!-- MINUS BUTTON -->
-          <input id="delete" class=" keypad-buttons"type="button" value="*"></input>
+          <input id="delete" class=" keypad-buttons"type="button" value="*" data-action="multiply"></input>
         </div>
       </div>
       <!-- RESET + "=" BUTTONS -->
       <div class="special row">
         <div class="col">
-          <input id="reset"class=" keypad-buttons" type="button" value="reset"></input>
+          <input id="reset"class=" keypad-buttons" type="button" value="reset" data-action="reset"></input>
         </div>
         <div class="col">
-          <input id="equals"class=" keypad-buttons" type="button" value="="></input>
+          <input id="equals"class=" keypad-buttons" type="button" value="=" data-action="equals"></input>
         </div>
       </div>
     </div>
