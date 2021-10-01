@@ -6,9 +6,12 @@ NOTE: As of 9/30/21 -you have 7 days to complete this project!
 
 2. Attach event listeners to buttons + display result to display window.[DONE]
 
-3. Begin work on performing calculations with numbers entered @ calculator input section
+3. Begin work on performing calculations with numbers entered @ calculator input section [START HERE nxt time...]
 
 4. Display result of calculations @ input span
+
+
+
 
 What are we learning w/ this project?
   > Concepts / methods
