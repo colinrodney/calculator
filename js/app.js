@@ -33,14 +33,16 @@ KEYPAD.addEventListener("click", (event) => {
   }
 
   // chk if value in display-window is 0...
+  if (SPAN.textContent === "0") {
+    // console.log(`0`); <-- TESTING
 
-  // concatenate...
-  let updatedDisplayValue = SPAN.innerText + event.target.value;
+    // replace 0 w/ key value
+    SPAN.innerText = event.target.value;
+  } else {
+    // console.log(`not 0`); <-- TESTING
 
-  SPAN.innerText = updatedDisplayValue;
-
-  // let currentValue = SPAN.innerText;
-
-  // let test = (currentValue += keyValue);
-  // console.log(test);
+    // concatenate addl input ey clicks to existing display-window value
+    let updatedDisplayValue = SPAN.innerText + event.target.value;
+    SPAN.innerText = updatedDisplayValue;
+  }
 });
